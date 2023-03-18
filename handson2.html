@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment-2</title>
+    <style>
+      .top {
+        background-color: #333;
+        overflow: hidden;
+      }
+      .top a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .top a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .top a.active1 {
+        background-color: #04aa6d;
+        color: white;
+      }
+      .active2 {
+        color: white;
+        font-size: 55px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: left;
+      }
+
+      .flexbox {
+        height: 120px;
+        width: 470px;
+        background-color: rgb(229, 220, 220);
+        color: blue;
+        margin: 12px;
+        border-radius: 8px;
+        font-size: 20px;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        align-items: center;
+        padding-left: 12px;
+        /* animation-name: vj;
+            animation-duration: 20s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: inherit;
+            animation-direction: normal; */
+      }
+
+      .h1 {
+        color: rgb(229, 220, 220);
+        padding-top: 50px;
+      }
+
+      .h1:hover {
+        color: red;
+      }
+
+      #fb-1 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-1:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(22, 179, 22);
+        height: 280px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-2 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-2:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(33, 220, 16);
+        height: 350px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-3 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-3:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px red;
+        height: 350px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-4 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-4:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(228, 239, 21);
+        height: 350px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-5 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-5:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(4, 0, 255);
+        height: 350px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-6 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-6:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(255, 0, 225);
+        height: 350px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-7 {
+        padding-top: 12px;
+        font-size: 12px;
+      }
+
+      #fb-7:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(21, 166, 127);
+        height: 420px;
+        width: 850px;
+        font-size: 25px;
+        color: blue;
+      }
+
+      #fb-dd {
+        padding-top: 12px;
+        font-size: 10px;
+      }
+
+      #fb-dd:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px rgb(21, 166, 127);
+        height: 520px;
+        width: 850px;
+        font-size: 18px;
+        color: blue;
+      }
+
+      #fb-8 {
+        padding-top: 12px;
+        font-size: 10px;
+      }
+
+      #fb-8:hover {
+        transform: translateX(10px);
+        box-shadow: 5px 5px 5px 5px red;
+        height: 380px;
+        width: 900px;
+        font-size: 22px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <a href="./##" class="active1">Home</a>
+      <a href="./##" class="active">News</a>
+      <a href="./##" class="active">Contact</a>
+      <a href="./index.html" class="active">Back</a>
+      <div class="active2">Handson-2</div>
+    </div>
+
+    <div class="flex">
+      <div class="flexbox" id="fb-1">
+        Q.1. Calculator
+        <pre class="h1">
+            const Calculator = (A, B, C) => 
+            {
+                switch(A) {
+                  case "+" : return B+C;
+                  case "-" : return B-C;
+                  case "*" : return B*C;
+                  case "/" : return B/C;
+                }
+             };
+        </pre>
+      </div>
+      <div class="flexbox" id="fb-2">
+        Q.2. Check whether the conditions are fulfilled or not
+        <pre class="h1">
+                const Check_divisibility = (N) => {
+                    if(N%6===0 && N%9===0){
+                      return "Divisible by both";
+                    } 
+                    
+                    else{
+                      return "Not Divisible by both" ;
+                    }
+                 };
+            </pre
+        >
+      </div>
+      <div class="flexbox" id="fb-3">
+        Q.3. Eligible Voter
+        <pre class="h1">
+                const isEligible = (a) => {
+                    if(a>=18)
+                    return("Eligible for Voting");
+                    else
+                    return("Not Eligible for Voting");
+                    
+                  };
+            </pre
+        >
+      </div>
+      <div class="flexbox" id="fb-4">
+        Q.4. Find Relation
+        <pre class="h1">
+            const findRelation = (x,y) => {
+                if(x<y)
+                   return x+ (" is smaller than ")+y;
+               else if(x>y)
+                   return x+(" is greater than ")+y;
+                else if(x===y)
+                    return x+ (" is equal to ")+y;
+                 };
+               
+                 
+        </pre>
+      </div>
+      <div class="flexbox" id="fb-5">
+        Q.5. Find Grades
+        <pre class="h1">
+                const findGrades = (M) => {
+                    switch(true){
+                       case(M<=10) : return "E";
+                       case(M>=11 && M<=20) : return "D";
+                       case(M>=21 && M<=30) : return "C";
+                       case(M>=31 && M<=40) : return "B";
+                       case(M>=41 && M<=50) : return "A";
+                      }
+                  };
+                   
+        </pre>
+      </div>
+      <div class="flexbox" id="fb-6">
+        Q.6. Get Value
+        <pre class="h1">
+                const getValue = (a) => {
+                    if('P'===a || 'p'===a)  
+                        return("PrepBytes")
+                    else if('Z'===a || 'z'===a)
+                        return("Zenith")
+                    else if('E'===a || 'e'===a)
+                        return("Expert Coder")
+                    else if('D'===a || 'd'===a)
+                        return("Data Structure")
+                  };
+                  
+                  
+                   
+        </pre>
+      </div>
+      <div class="flexbox" id="fb-7">
+        Q.7. Find the maximum number out of three
+        <pre class="h1">
+                const Max_out_of_three = (A,B,C) => {
+                    if(A>B) 
+                      if(A>C)
+                        return(A);
+                      else 
+                        return(C);
+                      else if(B>C)
+                        return(B);
+                      else if(C>A)
+                        return(C);
+                      else 
+                        return(-1);
+                    
+                  };
+                  
+                  
+        </pre>
+      </div>
+
+      <div class="flexbox" id="fb-dd">
+        Q.8. Second Smallest
+        <pre class="h1">
+                const findSndSmallest = (x,y,z) => {
+                    if(x>y) 
+                      if(x>z)
+                        if(y>z)
+                        return(y);
+                      else
+                      return (z);
+                      else
+                        if(x>y)
+                        return x;
+                        else
+                        return y;
+                    else
+                      if(y>z)
+                        if(x>z)
+                          return x;
+                        else
+                          return z;
+                      else
+                        if(z>x)
+                          if(x>y)
+                            return x;
+                          else
+                            return y;
+                    };
+                      
+        </pre>
+      </div>
+
+      <div class="flexbox" id="fb-8">
+        Q.9. Check whether the triangle is Acute or Obtuse
+        <pre class="h1">
+                    
+                const Triangle_Check = (A,B,C) => {
+                    if(A<90 && A>0) 
+                      if(B<90 && B>0)
+                        if(C<90 && C>0)
+                          return("acute");
+                        else 
+                          return("obtuse");
+                      else 
+                          return("obtuse");
+                    else 
+                          return("obtuse");
+                  
+                      
+                  };
+                  
+                   
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
